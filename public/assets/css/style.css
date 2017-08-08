@@ -1,0 +1,29 @@
+body{
+	font-family: 'Lobster Two', cursive;
+	font-size: 16px;
+	color: #333;
+	background-color: white;
+	margin: 0 auto;
+	background-image: url("../../assets/img/food.png");
+}
+
+li {
+	font-family: 'Righteous', cursive;;
+	font-size: 14px;
+}
+
+.jumbotron {
+	background-color: #fff997;
+	text-align: center;
+}
+
+.container {
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#sizebtn {
+	width: 100%;
+}
