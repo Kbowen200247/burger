@@ -1,3 +1,4 @@
+USE ved17w93tbj92kfq;
 -- Insert a set of records.
 INSERT INTO burgers (burger_name, devoured) VALUES ('Big Mac', false);
 INSERT INTO burgers (burger_name, devoured) VALUES ('Peanut Butter Burger', true);

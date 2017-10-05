@@ -1,7 +1,7 @@
 -- Create the burgers_db database --
-CREATE DATABASE burgers_db;
+--CREATE DATABASE burgers_db;
 
-USE burgers_db;
+USE ved17w93tbj92kfq;
 
 -- Create a burgers table with the required field --
 CREATE TABLE burgers
