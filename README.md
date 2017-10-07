@@ -28,7 +28,9 @@ In this assignment, you'll create a burger logger with MySQL, Node, Express, Han
 
 9. Require the following npm packages inside of the server.js file:
 	* express
+
 	* method-override
+
 	* body-parser
 
 ### DB Setup
@@ -37,19 +39,19 @@ In this assignment, you'll create a burger logger with MySQL, Node, Express, Han
 
 2. In the db folder, create a file named schema.sql. Write SQL queries this file that do the following:
 
-* Create the burgers_db.
+	* Create the burgers_db.
 
-* Switch to or use the burgers_db.
+	* Switch to or use the burgers_db.
 
-* Create a burgers table with these fields:
+	* Create a burgers table with these fields:
 
-- id: an auto incrementing int that serves as the primary key.
+		- id: an auto incrementing int that serves as the primary key.
 
-- burger_name: a string.
+		- burger_name: a string.
 
-- devoured: a boolean.
+		- devoured: a boolean.
 
-- date: a TIMESTAMP.
+		- date: a TIMESTAMP.
 
 1. Still in the db folder, create a seeds.sql file. In this file, write insert queries to populate the burgers table with at least three entries.
 
@@ -57,49 +59,51 @@ In this assignment, you'll create a burger logger with MySQL, Node, Express, Han
 
 3. Now you're going to run these SQL files. 
 
-* Make sure you're in the db folder of your app.
+	* Make sure you're in the db folder of your app.
 
-* Start MySQL command line tool and login: mysql -u root -p.
+	* Start MySQL command line tool and login: mysql -u root -p.
 
-* With the mysql> command line tool running, enter the command source schema.sql. This will run your schema file and all of the queries in it -- in other words, you'll be creating your database.
+	* With the mysql> command line tool running, enter the command source schema.sql. This will run your schema file and all of the queries in it -- in other words, you'll be creating your database.
 
-* Now insert the entries you defined in seeds.sql by running the file: source seeds.sql.
+	* Now insert the entries you defined in seeds.sql by running the file: source seeds.sql.
 
-* Close out of the MySQL command line tool: exit.
+	* Close out of the MySQL command line tool: exit.
 
 ### Config Setup
+
 1. Inside your burger directory, create a folder named config.
 
 2. Create a connection.js file inside config directory.
 
-* Inside the connection.js file, setup the code to connect Node to MySQL.
+	* Inside the connection.js file, setup the code to connect Node to MySQL.
 
-* Export the connection.
+	* Export the connection.
 
 1. Create an orm.js file inside config directory.
 
-* Import (require) connection.js into orm.js
+	* Import (require) connection.js into orm.js
 
-* In the orm.js file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
+	* In the orm.js file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
 
-- selectAll() 
+		- selectAll() 
 
-- insertOne() 
+		- insertOne() 
 
-- updateOne() 
+		- updateOne() 
 
-* Export the ORM object in module.exports.
+	* Export the ORM object in module.exports.
 
 ### Model setup
+
 * Inside your burger directory, create a folder named models.
 
-- In models, make a burger.js file.
+	- In models, make a burger.js file.
 
-- Inside burger.js, import orm.js into burger.js
+	- Inside burger.js, import orm.js into burger.js
 
-- Also inside burger.js, create the code that will call the ORM functions using burger specific input for the ORM.
+	- Also inside burger.js, create the code that will call the ORM functions using burger specific input for the ORM.
 
-- Export at the end of the burger.js file.
+	- Export at the end of the burger.js file.
 
 ### Controller setup
 
@@ -109,9 +113,9 @@ In this assignment, you'll create a burger logger with MySQL, Node, Express, Han
 
 3. Inside the burgers_controller.js file, import the following:
 
-*  Express
+	*  Express
 
-* burger.js
+	* burger.js
 
 1. Create the router for the app, and export the router at the end of your file.
 
